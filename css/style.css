@@ -1,0 +1,557 @@
+/*****Подключение шрифтов(Начало)******/
+@font-face {
+    font-family: MBlack; /* Имя шрифта */
+    src: url(../fonts/MullerBlack.otf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family: MBold; /* Имя шрифта */
+    src: url(../fonts/MullerBold.otf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family: MExtraBold; /* Имя шрифта */
+    src: url(../fonts/MullerExtraBold.otf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family: MLight; /* Имя шрифта */
+    src: url(../fonts/MullerLight.otf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family: MMedium; /* Имя шрифта */
+    src: url(../fonts/MullerMedium.otf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family: MRegular; /* Имя шрифта */
+    src: url(../fonts/MullerRegular.otf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family: MUltraLight; /* Имя шрифта */
+    src: url(../fonts/MullerUltraLight.otf); /* Путь к файлу со шрифтом */
+   }
+/******Подключение шрифтов(Конец)******/
+/*Общие настройки(Начало)*/
+*{margin: 0;padding: 0;}
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 6px dashed;
+  border-top: 6px solid white;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+h2,h3,h4{text-transform: uppercase;}
+.block{
+	height: 9px;width: 118px;
+	background-color: black;
+	margin: 20px 0;
+}
+.decor{
+	border: 4px solid rgba(0,0,0,.1);
+    position: relative;
+    z-index: -1;
+    /*max-width: 500px;*/
+}
+.center{
+	margin: 0 auto;
+	text-align: center;
+}
+.img{
+	background: #333;
+}
+.containerfluid{
+	position: relative;
+}
+.container{
+	padding: 60px 0;
+}
+.pad_top_30{
+padding-top: 30px;}
+form input, form button{
+	height: 42px;
+	margin-bottom: 35px;
+	border: 0;
+	background: #85d12c;
+}
+form button{
+	font-family: MMedium;
+	font-size: 16px;
+}
+form input{
+	border-bottom: 1px solid #ececec;
+	background: transparent;
+	color: #ececec;
+}
+/*Общие настройки(Конец)*/
+
+/*Шапка(Начало)*/
+.fongradient {
+	height: 1010px;
+    background: linear-gradient(11deg,white 21%,#94d43e 21%,#4ba541 100%);
+}
+header{margin-top: -80px;
+	padding-top: 40px;}
+header span{color: #398815;}
+header h2{
+	font-family: MExtraBold;
+	font-size: 40px;
+}
+header p{
+	font-family: MMedium;
+	font-size: 21px;
+	color: white;
+	line-height: 29px;
+}
+header p.hh2{
+
+	font-size: 14px;
+	font-family: MRegular;
+	margin-top: -9px;
+}
+p.araund{border: 1px solid white;
+border-radius: 5px;
+text-align: center;
+padding-left: 5px;
+height: 29px;
+line-height: 29px;	
+padding-right: 5px;
+font-size: 14px;
+
+}
+.ml-15px{
+	margin-left: -15px;
+}
+div.circle{
+width: 30px;
+height: 30px;
+border-radius: 50%;
+border: 2px solid white;
+text-align: center;
+line-height: 30px;
+margin-left: 0px;
+}
+.fa-lg{
+	margin-right: -1px;
+}
+.Pt25{
+ padding-top: 25px;
+}
+/*hover*/
+.fa-lg:hover i{color: black;cursor: pointer;}
+.fa-lg:hover i.fa-odnoklassniki{color: #ff6a0b}
+p.araund:hover{
+	cursor: pointer;
+	background-color: rgba(0,0,0,.2);
+}
+/*hover*/
+
+/*шапка часть 2*/
+h1{
+	color: white;
+	font-size: 53px;
+	font-family: MExtraBold;
+	text-transform: uppercase;
+	margin: 70px 0 20px -6px;
+}
+h1>span{color: black;}
+.header2 .block{
+	background-color: white;
+	margin-bottom: 25px;
+	}
+
+.header2 p{color: white;
+font-size: 23px;
+font-family: MLight;
+text-shadow: 0px 2px 2px rgba(148,164,174,.8);
+margin-left: -8px;}
+.header2 p span {
+	font-family: MExtraBold;
+	font-size: 22px;
+}
+.header2{margin-top: 0px;padding-bottom: 35px;}
+.header2 img{
+	width: 750px;
+	height: 700px;
+}
+.btn{
+	border:2px solid white;
+	height: 50px;
+	width: 300px;
+	margin-top: 20px;
+}
+.btn p{
+	font-size: 22px;
+	text-align: center;
+    line-height: 50px;
+}
+/*hover*/
+.btn:hover{
+	cursor: pointer;
+	background-color: rgba(0,0,0,.2);
+	box-shadow: 1px 2px 5px rgba(0,0,0,.3);
+}
+/*hover*/
+/*Шапка(Конец)*/
+/*часть первая лапша*/
+.task1 .img{
+	background: url(../Attached/85.png)no-repeat;
+	height: 620px;
+	margin-top: 30px;
+}
+.task1 h3 {
+	padding-top: 150px;
+	font-size: 22px;
+	line-height: 25px;
+	font-family: MBold;
+}
+.task1 p{
+
+    font-size: 16px;
+    line-height: 30px;
+}
+.task1{padding-top: 0;}
+.task1 .decor{
+	height: 620px;
+	top: 10%;
+	left: 30%;
+}
+/*часть первая конец*/
+/*Часть вторая начало*/
+.task2 .img{
+	background: url(../Attached/84.png)no-repeat;
+
+	height: 710px;
+}
+.task2 .decor{
+    height: 620px;
+    top: 17%;
+    right: 37%;
+    width: 570px;
+}
+.task2{
+	text-align: right;
+}
+.task2 h3 {
+	padding-top: 250px;
+	font-size: 22px;
+	line-height: 25px;
+	font-family: MBold;
+}
+.task2 p{
+    font-size: 16px;
+    line-height: 30px;
+}
+/*Часть вторая Конец*/
+/*Часть третья Начало*/
+.task3 .img{
+	background: url(../Attached/83.png)no-repeat;
+	height: 370px;	
+}
+.task3 h3 {
+	padding-top: 100px;
+	font-size: 22px;
+	line-height: 25px;
+	font-family: MBold;
+}
+.task3 p{
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.task3 .decor{
+	height: 400px;
+	top: 10%;
+	left: 30%;
+}
+/*Часть третья Конец*/
+/*Часть четвертая Начало*/
+.task4 .img{
+	background: url(../Attached/86.png)no-repeat;
+	height: 370px;
+}
+.task4 .decor{
+    height: 380px;
+    top: 13%;
+    right: 60%;
+    width: 550px;
+}
+.task4{
+	text-align: right;
+}
+.task4 h3 {
+	padding-top: 70px;
+	font-size: 22px;
+	line-height: 25px;
+	font-family: MBold;
+}
+.task4 p{
+    font-size: 16px;
+    line-height: 30px;
+}
+/*Часть четвертая Конец*/
+/*Часть пятая зеленая полоса vvv*/
+.bg_fon_back{
+	width: 100%;
+	background: url(../Attached/73.png)no-repeat;
+	background-size: 100% 800px;
+}
+ .bg_fon_front{
+	background: url(../Attached/82.png)no-repeat;
+	background-size: 100% 1137px;
+	background-position: center 290px;
+} 
+.task5 .container{
+    min-height: 1430px;
+}
+.task5{
+	text-align: center;
+	color: #fff;
+}
+.task5 h3 {
+	font-family: MExtraBold;
+	font-size: 30px;
+}
+.task5 p{
+	font-family: MLight;
+}
+.tslesh{	
+	margin-top: 760px;
+	right: -150px;
+}
+.bslesh{left: 50px;}
+.tslesh,.bslesh{
+	position: relative;
+	height: 40px;
+	border: 1px solid #fff;
+	width: 1px;
+	transform: rotate(35deg);
+}
+.task5 h2 span{
+	font-family: MLight;
+	color: #6d6d6d;
+	font-weight: 100;
+}
+.task5 h2{
+	font-size: 30px;
+	color: black;
+	padding-top: 120px;
+	font-family: MExtraBold;
+}
+.task5 .row+.row{
+	padding-top: 150px;
+
+}
+.video{
+	width: 500px;
+	height: 300px;
+	background: #242424 url(../Attached/play.png)no-repeat center;
+}
+/*Часть пятая зеленая полоса ^^^*/
+/*Часть шестая отзывы vvv*/
+.task6 .name{
+	color: #60a53b;
+	font-size: 30px;
+	margin-bottom: 20px;
+	line-height: 85px;
+	text-indent: 25px;
+	text-transform: capitalize;
+}
+.task6{
+		font-family: MLight;
+	}
+.task6 p{
+	padding-right: 40px;
+	line-height: 30px;
+	font-size: 20px;
+}
+.task6 .foto_1{
+	width: 81px;
+	height: 81px;
+	border-radius: 50%;
+	background: #ccc url(../Attached/foto_1.png) no-repeat center;
+	float: left;
+}
+.task6 .foto_2{
+	width: 81px;
+	height: 81px;
+	border-radius: 50%;
+	background: #ccc url(../Attached/foto_2.png) no-repeat center;
+	float: left;
+}
+.task6 .foto_3{
+	width: 81px;
+	height: 81px;
+	border-radius: 50%;
+	background: #ccc url(../Attached/foto_3.png) no-repeat center;
+	float: left;
+}
+/*Часть шестая отзывы ^^^*/
+/*Часть седьмая акция? vvv*/
+.task7 {
+	overflow: hidden;
+}
+.task7 .bg{
+	position: relative;
+	height: 950px;
+}
+.task7 .bg > img{
+	position: absolute;
+}
+.task7 img.fon_1{
+    top: 400px;
+    z-index: -1;
+    left: 550px;
+}
+.task7 .fon_2{
+	top: -90px;
+	left: 340px;
+	height: 665px;
+	width: auto;
+	z-index: -2;
+}
+.task7 .fon_3{
+	top: 0px;
+	right: 740px;
+	z-index: -3;
+}
+.task7 .decor{ 
+	position: absolute;
+	height: 500px;
+	width: 1400px;
+	top: 400px; 
+	left: -200px;
+	z-index: -4;
+}
+.task7 h2{
+	color: #6ab940;
+	font-family: MExtraBold;
+	font-size: 45px;
+}
+.task7 p{
+	color: #fff;
+	font-family: MUltraLight;
+	font-size: 25px;
+}
+.task7 strong{
+	color: #fff;
+	font-family: MBold;
+}
+
+.task7 button:hover{background: #6fac27;}
+/*Часть седьмая акция? ^^^*/
+/*Часть восьмая сервис vvv*/
+.task8 .icon{
+	height: 74px;
+	width: 74px;
+	background: #ccc;
+}
+.task8{
+	text-align: center;
+}
+.task8 .s1{
+	background: url(../Attached/s1.png)no-repeat center;
+	margin-bottom: 30px;
+}
+.task8 .s2{
+	background: url(../Attached/s2.png)no-repeat center;
+	margin-bottom: 30px;
+}
+.task8 .s3{
+	background: url(../Attached/s3.png)no-repeat center;
+	margin-bottom: 30px;
+}
+.task8 .s4{
+	background: url(../Attached/s4.png)no-repeat center;
+	margin-bottom: 30px;
+}
+.task8 h3 {
+	font-size: 22px;
+}
+.task8 p{
+	font-size: 16px;
+}
+/*Часть восьмая сервис ^^^*/
+/*Часть девятая Заказ ssd vvv*/
+.task9 .img{
+	position: absolute;
+	left: 550px;
+	width: 1063px;
+	height: 820px;
+	background: url(../Attached/79.png)no-repeat center;
+	z-index: -1;
+}
+.task9 {
+	height: 820px;
+	overflow: hidden;}
+.task9 button{
+	margin: 30px 40px 0 0;
+	float: left;
+	height: 42px;
+	width: 280px;
+	border: 0;
+	background: #85d12c;
+	font-family: MMedium;
+	font-size: 16px;
+}
+.task9 button:hover{background: #6fac27;}
+.task9 button+ p{margin-top: 30px; color: #6ab940; }
+.task9 .inline div{display: inline-block;
+border: 2px solid black; padding: 0 50px;}
+.task9 .inline div:last-child{margin-left: -6px;}
+.task9 .inline div:first-child{color: #fff; background: #000;}
+.task9 .inline div:hover { color: #fff; background: #000; cursor: pointer; }
+.task9 h2{text-transform: none;
+font-size: 55px;}
+.task9 p{font-size: 16px;}
+.task9 a{color: #ccc;text-decoration: underline;}
+/*Часть девятая Заказ ssd ^^^*/
+/*Часть десятая vvv*/
+.task10 .img{
+position: relative;
+left: -110px;
+	float: left;height: 720px;width: 720px; 
+	background: url(../Attached/80.png)no-repeat center;}
+.task10 .icon{
+    height: 86px;
+	width: 86px;
+	background: #76b61a;
+}
+.task10 .img+div{ padding-top: 110px;}
+.task10 p{position: relative;top: -55px;}
+.task10 .s1 {background: #76b61a url(../Attached/d1.png)no-repeat center;}
+.task10 .s2 {background: #76b61a url(../Attached/d2.png)no-repeat center;}
+.task10 .s3 {background: #76b61a url(../Attached/d3.png)no-repeat center;}
+.task10 .s4 {background: #76b61a url(../Attached/d4.png)no-repeat center;}
+
+/*Часть десятая ^^^*/
+/* тыfooter*/
+footer h2{
+	padding-top: 50px;
+	color: #fff;
+	font-family: MLight;
+	font-weight: 100;
+}
+footer button{background: transparent;color: #fff;border: 2px solid grey;}
+footer button:hover{
+	background: rgba(0,0,0,.4);border-color: #555;
+}
+footer strong{
+	font-size: 28px;
+}
+footer .containerfluid:first-child {
+	height: 494px;
+	background: #2b2b2b url(../Attached/footer.png)no-repeat;
+	background-position: center center;
+}
+footer .containerfluid:first-child .container{padding-top: 155px;}
+footer{background: #000 ;overflow: hidden;}
+footer .circle:hover{cursor: pointer; background: #fff;border-color: #777;}
+footer .circle:hover i{color: #000;}
+footer .containerfluid:last-child p{color: #fff;font-size: 20px;}
+footer p.araund,footer .circle {margin-top: 10px;}
+footer ul{list-style: none;}
+ul li{display: inline-block; padding-right: 60px;}
+ul li:first-child{padding-left: 30px;}
+ul li:last-child{padding-right: 30px;}
+/*ссfooter*/
