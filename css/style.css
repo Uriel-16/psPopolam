@@ -88,7 +88,7 @@ form input{
 /*Шапка(Начало)*/
 .fongradient {
 	height: 1010px;
-    background: linear-gradient(11deg,white 21%,#94d43e 21%,#4ba541 100%);
+    background: url(../Attached/header_dop.png)no-repeat center 100%,linear-gradient(11deg,white 21%,#94d43e 21%,#4ba541 100%) ;
 }
 header{margin-top: -80px;
 	padding-top: 40px;}
@@ -138,8 +138,9 @@ margin-left: 0px;
  padding-top: 25px;
 }
 /*hover*/
-.fa-lg:hover i{color: black;cursor: pointer;}
-.fa-lg:hover i.fa-odnoklassniki{color: #ff6a0b}
+.circle:hover{cursor: pointer;}
+.circle:hover i{color: black;}
+.fa-md .circle:hover i.fa-odnoklassniki{color: #ff6a0b}
 p.araund:hover{
 	cursor: pointer;
 	background-color: rgba(0,0,0,.2);
